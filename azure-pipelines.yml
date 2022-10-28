@@ -4,6 +4,12 @@
     CheckmarxService: 'Checkmarx One'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
+    tenantName: 'Beta_nova8'
+- task: Checkmarx AST@2
+  inputs:
+    CheckmarxService: 'Checkmarx One'
+    projectName: '$(Build.Repository.Name)'
+    branchName: '$(Build.SourceBranchName)'
     tenantName: 'beta_nova8'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
